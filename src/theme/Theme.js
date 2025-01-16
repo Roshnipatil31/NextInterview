@@ -1,14 +1,22 @@
-// theme.js
 const theme = {
   colors: {
     primary: "#68c184",
     secondary: "#2390ac",
     success: "#28a745",
-    danger: "#dc3545",
+    error: "#dc3545",
     warning: "#ffc107",
     info: "#17a2b8",
     light: "#f8f9fa",
     text: "#262524",
+    sidebarBgColor: "#F0F8F1",
+    textgray:"#c2c3c4",
+    black: "#000",
+
+    sidebarTextColor: "#1A1C1E",
+    sidebarHoverBgColor: "#e0e0e0",
+    sidebarHoverTextColor: "#000",
+    sidebarActiveBgColor: "#d3d3d3",
+    sidebarActiveTextColor: "#000",
   },
   fonts: {
     body: "'DM Sans', sans-serif",

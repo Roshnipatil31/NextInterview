@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,6 +20,24 @@ const GlobalStyle = createGlobalStyle`
   .display-text {
     font-family: ${(props) => props.theme.fonts.display};
   }
+
+
+      .page-wrapper{
+        min-height: 100vh;
+        display: flex;
+        width: 100%;
+    }
+
+    .content-wrapper{
+        flex: 1;
+        max-width: 1600px;
+        margin-right: auto;
+    
+         margin-left: ${(props) => (props.isExpanded ? "200px" : "60px")};
+  padding: 20px;
+  width: calc(100% - ${(props) => (props.isExpanded ? "200px" : "60px")});
+  transition: margin-left 0.3s ease, width 0.3s ease;
+    }
 `;
 
 export default GlobalStyle;
