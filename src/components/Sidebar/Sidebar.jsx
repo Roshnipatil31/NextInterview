@@ -8,6 +8,7 @@ import { BsFileEarmarkLock } from "react-icons/bs";
 import { TbDeviceIpadQuestion } from "react-icons/tb";
 import { IoIosRepeat } from "react-icons/io";
 import { RxDashboard } from "react-icons/rx";
+import { CiMobile1 } from "react-icons/ci";
 
 const Sidebar = ({ isExpanded, setIsExpanded }) => {
   const location = useLocation();
@@ -61,6 +62,14 @@ const Sidebar = ({ isExpanded, setIsExpanded }) => {
             </NavLink>
           </li>
           <li className="menu-item">
+            <NavLink to="/admin/Flashcards" className={getLearningLinkClass}>
+              <span className="menu-link-icon">
+                <CiMobile1 />
+              </span>
+              <span className="menu-link-text">Flashcards</span>
+            </NavLink>
+          </li>
+          <li className="menu-item">
             <NavLink
               to="/revise"
               activeClassName="active"
@@ -86,7 +95,7 @@ const Sidebar = ({ isExpanded, setIsExpanded }) => {
           </li>
           <li className="menu-item">
             <NavLink
-              to="/challenges"
+              to="/admin/challenges"
               activeClassName="active"
               className="menu-link"
             >
